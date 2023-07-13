@@ -48,6 +48,7 @@ export default function Card({ name, image, location, id }) {
       <Figure>
         <ImageContainer>
           <StyledImage
+            priority
             src={image}
             fill
             sizes="(max-width: 768px) 100vw,
