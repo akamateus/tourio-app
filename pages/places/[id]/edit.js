@@ -13,8 +13,6 @@ export default function EditPage() {
   if (!isReady || isLoading || error) return <h2>Loading...</h2>;
 
   async function editPlace(place) {
-    console.log("place:", place);
-
     const response = await fetch(`/api/places/${id}`, {
       method: "PATCH",
       headers: {
