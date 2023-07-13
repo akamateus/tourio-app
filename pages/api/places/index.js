@@ -8,9 +8,7 @@ export default async function handler(request, response) {
     const places = await Place.find();
     return response.status(200).json(places);
   } 
-  // else {
-  //   return response.status(405).json({ message: "Method not allowed" });
-  // }
+
 
   if (request.method === "POST") {
     try {
